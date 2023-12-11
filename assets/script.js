@@ -17,10 +17,10 @@ const slides = [
 	}
 ]
 
-document.querySelector(".arrow_left").addEventListener("click", () => {
+const arrowLeft = document.querySelector(".arrow_left").addEventListener("click", () => {
 	console.log("Vous avez cliqué sur la flèche gauche")
  })
 
- document.querySelector(".arrow_right").addEventListener("click", () => {
+const arrowRight = document.querySelector(".arrow_right").addEventListener("click", () => {
 	console.log("Vous avez cliqué sur la flèche droite")
  })
