@@ -17,10 +17,17 @@ const slides = [
 	}
 ]
 
-const arrowLeft = document.querySelector(".arrow_left").addEventListener("click", () => {
+let index = 0;
+
+const changingDots = document.querySelectorAll(".dot")
+
+const changingSlides = document.querySelector(".banner-img")
+
+const arrowLeft = document.querySelector(".arrow_left").addEventListener("click",  () => {
 	console.log("Vous avez cliqué sur la flèche gauche")
  })
 
 const arrowRight = document.querySelector(".arrow_right").addEventListener("click", () => {
 	console.log("Vous avez cliqué sur la flèche droite")
  })
+
