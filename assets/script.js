@@ -19,9 +19,9 @@ const slides = [
 
 let index = 0;
 
-const changingDots = document.querySelectorAll(".dot");
+const pointsDots = document.querySelectorAll(".dot");
 
-const changingSlides = document.querySelector(".banner-img");
+const imagesSlides = document.querySelector(".banner-img");
 
 const arrowLeft = document.querySelector(".arrow_left").addEventListener("click",  () => {
 	index = (index -1 + slides.length) % slides.length;
@@ -37,8 +37,8 @@ const arrowRight = document.querySelector(".arrow_right").addEventListener("clic
 
  function updateSlider() {
 	const currentSlide = slides[index];
-	changingSlides.src = currentSlide.image;
-	changingSlides.alt = currentSlide.tagLine;
+	imagesSlides.src = currentSlide.image;
+	imagesSlides.alt = currentSlide.tagLine;
  }
 
  //  mettre à jour les points//
