@@ -39,7 +39,7 @@ const arrowRight = document.querySelector(".arrow_right").addEventListener("clic
 	const currentSlide = slides[index];     
 	imagesSlides.src = currentSlide.image; //Pour que les images s'affichent dans le carousel//
 	imagesSlides.alt = "Banner-Print It";                            
-	document.querySelector("p").innerHTML = currentSlide.tagLine;  //Pour que les paragraphes sur les images dans le carousel//
+	document.querySelector("span").innerHTML = currentSlide.tagLine;  //Pour que les paragraphes sur les images dans le carousel//
 
 	pointsDots.forEach(dot => {              // Boucle pour la mise à jour des bullets points sur les images dans le carousel//
 		dot.classList.add("dot_selected");  // Ajoute la classe pour le bullet point actuel//
