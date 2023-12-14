@@ -24,30 +24,29 @@ const pointsDots = document.querySelectorAll(".dot");
 const imagesSlides = document.querySelector(".banner-img");
 
 const arrowLeft = document.querySelector(".arrow_left").addEventListener("click",  () => {
-	index = (index -1 + slides.length) % slides.length;                                      //calcul pour que les images reculent quand on clique sur la flèche gauche//
+	index = (index -1 + slides.length) % slides.length;                                      //Calcul pour que les images reculent quand on clique sur la flèche gauche//
 	updateSlider();
 	console.log("Vous avez cliqué sur la flèche gauche")
  });
 
 const arrowRight = document.querySelector(".arrow_right").addEventListener("click", () => {   
-	index = (index + 1) % slides.length;                                                     //calcul pour que les images avancent quand on clique sur la flèche droite//
+	index = (index + 1) % slides.length;                                                     //Calcul pour que les images avancent quand on clique sur la flèche droite//
 	updateSlider();
 	console.log("Vous avez cliqué sur la flèche droite")
  });
 
- function updateSlider() {                //fonction pour la mise à jour des images dans le carousel//
-	const currentSlide = slides[index];
-	imagesSlides.src = currentSlide.image;
-	imagesSlides.alt = currentSlide.tagLine;
+ function updateSlider() {                //Fonction pour la mise à jour des images dans le carousel//
+	const currentSlide = slides[index];     
+	imagesSlides.src = currentSlide.image; //Pour que les images s'affichent dans le carousel//
+	imagesSlides.alt = "Banner-Print It";                            
+	document.querySelector("p").innerHTML = currentSlide.tagLine;  //Pour que les paragraphes sur les images dans le carousel//
 
-	pointsDots.forEach(dot => {              // boucle pour la mise à jour des bullets points sur les images dans le carousel//
-		dot.classList.add("dot_selected");  // ajoute la classe pour le bullet point actuel//
+	pointsDots.forEach(dot => {              // Boucle pour la mise à jour des bullets points sur les images dans le carousel//
+		dot.classList.add("dot_selected");  // Ajoute la classe pour le bullet point actuel//
 	});
-	pointsDots[index].classList.remove("dot_selected"); //supprime la classe pour les autres bullets points//
+	pointsDots[index].classList.remove("dot_selected"); //Supprime la classe pour les autres bullets points//
  }
 
-
- //reste à faire pour le tagline les phrases qui se mettent à jour en même temps que les images dans le carousel//
 
 
 
