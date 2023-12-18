@@ -17,7 +17,7 @@ const slides = [
 	}
 ]
 
-let index = 0;
+let index = 0;      // index sert à suivre la position actuelle de l'image affichée dans le carousel, 0 pour la première image du tableau//
 
 const pointsDots = document.querySelectorAll(".dot");
 
