@@ -26,13 +26,13 @@ const imagesSlides = document.querySelector(".banner-img");
 const arrowLeft = document.querySelector(".arrow_left").addEventListener("click",  () => {
 	index = (index -1 + slides.length) % slides.length;                                      //Calcul pour que les images reculent quand on clique sur la flèche gauche//
 	updateSlider();
-	console.log("Vous avez cliqué sur la flèche gauche")
+	console.log("Vous avez cliqué sur la flèche gauche");
  });
 
 const arrowRight = document.querySelector(".arrow_right").addEventListener("click", () => {   
 	index = (index + 1) % slides.length;                                                     //Calcul pour que les images avancent quand on clique sur la flèche droite//
 	updateSlider();
-	console.log("Vous avez cliqué sur la flèche droite")
+	console.log("Vous avez cliqué sur la flèche droite");
  });
 
  function updateSlider() {                //Fonction pour la mise à jour des images dans le carousel//
